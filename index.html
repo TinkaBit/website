@@ -23,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles  -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/tinkabit.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
 
@@ -34,7 +34,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <img class="navbar-brand js-scroll-trigger" src="img/logos/tinkabit_branco.png" width="150px" href="#page-top">
+        <a class="js-scroll-trigger" href="#page-top"><img class="navbar-brand" src="img/logos/tinkabit_branco.png" width="150px" href="#page-top"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -43,11 +43,14 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li> -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#tinkabit-features">How We Work</a>
+            </li> 
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#clients">Clients</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -61,89 +64,123 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header id="masterheader" class="masthead">
       <div class="container">
+        <div class="tinkabit-magictext">
+            <canvas id="canvas"></canvas>
+              <div id="interface" style="display: none;">
+                <input id="message" type="text" value="T" onchange="change()">
+              </div>
+          </div>
         <div class="intro-text">
           <div class="intro-heading">Let us think for you!</div>
-          <div class="intro-lead-in">Over 5 years of application development experience</div>
-          <a class="btn btn-outline-success btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Us Your Project</a>
+           <div class="intro-lead-in">Web and mobile application development services</div> 
+          <!-- <a class="btn btn-outline-success btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Us Your Project</a> -->
         </div>
       </div>
     </header>
 
-<!--      <div class="homepage-hero-module">
-        <div class="video-container">
-          <div class="filter"></div>
-            <div class="intro-text">
-              <div class="intro-heading">Let us think for you!</div>
-              <div class="intro-lead-in">Over 5 years of application development experience</div>
-              <a class="btn btn-outline-success btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Us Your Project</a>
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Services</h2>
+              <h3 class="section-subheading text-muted">Always improving for you...</h3>
             </div>
-            <video autoplay loop class="fillWidth">
-              <source src="img/video/Black_Keys.mp4" type="video/mp4"/> Your browser does not support the video tag. I suggest you upgrade your browser.
-              <source src="img/video/Black_Keys.webm" type="video/webm"/> Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
-          <div class="poster hidden">
-            <img src="img/Black_Keys.jpg" alt="">
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="textbox grow">
+                <div class="textbox-image">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                  </span>
+                </div>
+                <div class="textbox-body">
+                  <h4 class="textbox-title service-heading"><a href="#">Consulting</a></h4>
+                  <p class="textbox-description">We take a process-driven approach, finding solutions and providing advanced knowledge in business design and software development.</p>
+                </div>
+              </div>
+            </div> <!-- col-md-4 -->
+            <div class="col-md-4">
+              <div class="textbox grow">
+                <div class="textbox-image">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                  </span>
+                </div>
+                <div class="textbox-body">
+                  <h4 class="textbox-title service-heading"><a href="#">Mobile Apps</a></h4>
+                  <p class="textbox-description">We create top quality iPhone &amp; Android native apps for startups and enterprise clients around the world, using the latest design guidelines.</p>
+                </div>
+              </div>
+            </div> <!-- col-md-4 -->
+            <div class="col-md-4">
+              <div class="textbox grow">
+                <div class="textbox-image">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                  </span>
+                </div>
+                <div class="textbox-body">
+                  <h4 class="textbox-title service-heading"><a href="#">Web Apps</a></h4>
+                  <p class="textbox-description">We build powerful responsive web apps that are custom
+                  made using agile development processes leveraging the latest web technologies.</p>
+                </div>
+              </div>
+            </div> <!-- col-md-4 -->
           </div>
         </div>
-      </div> -->
+      </section>
 
-  <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Always improving for you...</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <div class="textbox">
-              <div class="textbox-image">
-                <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-                </span>
-              </div>
-              <div class="textbox-body">
-                <h4 class="textbox-title service-heading"><a href="#">Mobile Apps</a></h4>
-                <p class="textbox-description text-muted">We create top quality iPhone &amp; Android apps for startups and enterprise clients around the world.</p>
-              </div>
+      <div id="tinkabit-features">
+        <div class="tinkabit-wrapper">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center tinkabit-heading animate-box">
+              <h2>How We Work</h2>
+              <p>We help you transforming your ideas into real world applications.</p>
+              <h2>&darr;</h2>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="textbox">
-              <div class="textbox-image">
-                <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                </span>
-              </div>
-              <div class="textbox-body">
-                <h4 class="textbox-title service-heading"><a href="#">Web Apps</a></h4>
-                <p class="textbox-description text-muted">We build powerful responsive web apps that are custom
-                made using agile development processes leveraging the latest web technologies.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="textbox">
-              <div class="textbox-image">
-                <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                </span>
-              </div>
-            <div class="textbox-body">
-              <h4 class="textbox-title service-heading"><a href="#">Web Security</a></h4>
-              <p class="textbox-description text-muted">Shielding applications for all segments.</p>
-            </div>
-          </div>
-          </div>
+          <section class="timeline">
+            <ul>
+              <li>
+                <div>
+                  <h3>Scenario Analysis</h3>
+                  <p>As soon as you tell us more about your ideas, we immerse ourselves in the project, we plan and estimate the deadline, time and cost to execute the project in the script, according to your requirements.</p>
+                  </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Design</h3>
+                  <p>After approval of the project, we develop an innovative and clean interface, following all the latest industry standards with strategies focused on usability.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Develop</h3>
+                  <p>In the next step, we build an interactive test application, with updates delivered after each sprint, so you can see the progress of your application.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Launch</h3>
+                  <p>At the end of the project, your application will become available to millions of users worldwide, ensuring the visibility and growth of your business.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Maintenance &amp; Support</h3>
+                  <p>To ensure that your business grows even more, we provide the necessary support upon completion of the project, as well as maintenance if necessary.</p>
+                </div>
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
-    </section>
 
     <!-- Portfolio Grid -->
     <!-- <section class="bg-light" id="portfolio">
@@ -243,84 +280,28 @@
       </div>
     </section> -->
 
-    <!-- About -->
-    <section id="about">
+
+    <!-- Clients -->
+    <section id="clients">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Partners</h2>
-            <h3 class="section-subheading text-muted">Partner companies that have a good time working together.</h3>
+            <h2 class="section-heading text-uppercase">Our clients</h2>
+            <h3 class="section-subheading text-muted">They are the life-source of our business.</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/partners/flexpag.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>FlexPag</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">FLEXPAG is a company focused on
-                      in capturing means of payment
-                      electronic format, facilitating its
-                      making it more effective
-                      and agile!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/partners/sms.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>Save my Sim</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Save My Sim has a tracking system for your device. This way, you can track location history, search in real time, and send a sound alert for your device to play at any time!</p>
-                  </div>
-                </div>
-              </li>
-              <!-- <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li> -->
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
+          <div class="col-sm-6">
+            <a href="https://www.flexpag.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="img/partners/flexpag.jpg" alt="">
+              <h4>FlexPag</h4>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="https://www.savemysim.com" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="img/partners/sms.jpg" alt="">  
+              <h4>SaveMySim</h4>
+            </a>
           </div>
         </div>
       </div>
@@ -336,7 +317,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
+          <!-- <div class="col-sm-4">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
               <h4>Daniel Sulman</h4>
@@ -359,49 +340,49 @@
                 </li>
               </ul>
             </div>
-          </div>
-          <div class="col-sm-4">
+          </div> -->
+          <div class="col-sm-6">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
               <h4>Guilherme Tavares</h4>
-              <p class="text-muted">Co-CTO</p>
+              <p class="text-muted">Developer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="https://twitter.com/mguilhermetavar">
+                  <a href="https://twitter.com/mguilhermetavar" target="_blank">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.facebook.com/mguilhermetavares/">
+                  <a href="https://www.facebook.com/mguilhermetavares/" target="_blank">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="https://www.linkedin.com/in/mguilhermetavares/">
+                  <a href="https://www.linkedin.com/in/mguilhermetavares/" target="_blank">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
               <h4>Dimas Albuquerque</h4>
-              <p class="text-muted">Co-CTO</p>
+              <p class="text-muted">Developer</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
+                  <a href="mailto: dimas.amendes@outlook.com">
+                    <i class="fa fa-envelope"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
+                  <a href="https://www.instagram.com/dimas.amendes" target="_blank">
+                    <i class="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li class="list-inline-item">
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/dimasmendes" target="_blank">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
@@ -416,34 +397,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Clients -->
-    <!-- <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <!-- Contact -->
     <section id="contact">
