@@ -248,7 +248,7 @@ function particle(x, y, type) {
       this.dying = false;
       this.y = this.base[1];
       this.radius = 1.1;
-      this.setSpeed(.1);
+      this.setSpeed(.2);
   this.futurRadius = utils.randomInt(radius, radius+3);
       this.setHeading(utils.randomInt(utils.degreesToRads(0), utils.degreesToRads(360)));
     }
@@ -262,9 +262,9 @@ function particle(x, y, type) {
 
 fieldvalue = document.getElementById("message");
 gravity = parseFloat(0);
-duration =  parseFloat(.4);
-resolution = parseFloat(5);
-speed = parseFloat(.2);
+duration =  parseFloat(.5);
+resolution = parseFloat(7);
+speed = parseFloat(0.15);
 radius = parseFloat(1);
 
 var message = new shape(W/2 , H/2 + 150, fieldvalue.value);
