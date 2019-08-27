@@ -26,18 +26,18 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
     },
     "dependencies": {
-        "bootstrap": "4.0.0",
+        "bootstrap": "4.3.1",
         "font-awesome": "4.7.0",
-        "jquery": "3.3.1",
+        "jquery": "3.4.0",
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
-        "browser-sync": "2.24.6",
+        "browser-sync": "2.26.7",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "3.10.0",
-        "gulp-header": "2.0.5",
+        "gulp-clean-css": "4.2.0",
+        "gulp-header": "2.0.9",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^4.0.1",
-        "gulp-uglify": "3.0.0"
+        "gulp-uglify": "3.0.2"
     }
 }
